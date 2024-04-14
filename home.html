@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Virtual Judge: Unlocking Legal Insights- Cases, Data, Penalties</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="home.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="navbar" style="background-image: linear-gradient(to bottom, #0a0908, #22333b);">
+    <a href="home.html">Home</a>
+    <a href="contact.html" class="right">Contact</a>
+    <a href="work.html" class="right">Work</a>
+    <a href="team.html" class="right">Team</a>
+</div>
+
+<div class="header">
+  <div class="bottomright">
+    <h1>Law and Justice.</h1>
+  </div>
+</div>
+
+<div class="main">
+  <div class="container" style="background-image: linear-gradient(to right, #0a0908, #22333b);">
+  <h1 style="color: #eae0d5"><u>Virtual Judge.</u></h1>
+  <h3 style="color: #eae0d5">Byteverse Project: Virtual Judge</h3>
+  <p style="color: #eae0d5">Your go-to spot for digging up all the nitty-gritty details on articles related to your case type.
+  
+    Whether you're diving into legal stuff, medical mysteries, historical happenings, or whatever else, we've got you covered with thorough summaries and analysis. Our database is huge, and our search is super easy to use. So, whenever you need the scoop on a specific case, just swing by Virtual Judge!</p>
+  <br>
+  <a href="work.html"><button class="btn success">Let's Explore</button></a>
+</div>
+
+<div class="row">
+  <div class="column1" style="background-color:#22333b; background-image: linear-gradient(to bottom, #0a0908, #22333b);">
+    <h2 style="color: #eae0d5; text-decoration-line: underline;">Our Team</h2>
+      <ol>
+        <strong>Aman Raj</strong>
+      </ol>
+      <ol>
+        <strong>Mohan Gupta</strong>
+      </ol>
+      <ol>
+        <strong>Divya Shakti</strong>
+      </ol>
+      <ol>
+        <strong>Alok Kumar</strong>
+      </ol>
+      <a href="team.html"><button class="btn success2">Know More</button></a>
+  </div>
+
+  <div class="column2" style="background-color:#bbb;">
+    <div class="container2">
+      <h2 style="color: #0a0908;">Enter the Details.</h2>
+      <form>
+        <div class="row">
+          <div class="col-25">
+            <label for="searchInputn">Culprit Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="searchInputn" placeholder="Name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="searchInput">Crime Type</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="searchInput" placeholder="Cybercrime, Theft..">
+          </div>
+        </div>
+        <div class="row">
+          <button onclick="searchList()" class="btn success2" type="button">Search</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<div class="main">
+  <div id="result"></div>
+</div>
+
+<div class="footer">
+  <h5>@Copyright GeeksSquad 13, April 2024</h5>
+</div>
+
+</body>
+
+<script>
+  function searchList() {
+    const userInputn = document.getElementById('searchInputn').value.toLowerCase();
+    const userInput = document.getElementById('searchInput').value.toLowerCase();
+    const list = [
+   { name_c:'theft', name: 'Theft', article: 'Article 812 and Article 813', charge: 'Misdemeanor: Up to 1 year in jail and/or fines. Felony: 1 year or more in prison and/or substantial fines.' },
+
+   { name_c:'assualt', name: 'Assualt', article: 'Article 13, Article 120 and Article 121', charge: 'Simple Assault: Misdemeanor with up to 1 year in jail and/or fines. Aggravated Assault: Can range from a misdemeanor to a felony with longer prison sentences and larger fines.' },
+
+   { name_c:'drug', name: 'Drug Possession', article: 'Federal law (21 U.S.C. & 844), State law (Article 220)', charge: 'Federal Law: Up to 1 year in jail for first-time offenders, steeper penalties for subsequent offenses. State Law: Varies widely; can range from probation and fines to several years in prison.' },
+
+   { name_c:'dui', name: 'DUI', article: 'Article 1192 or Article 23152', charge: 'First Offense: License suspension, fines, and possible jail time (usually up to 1 year). Subsequent Offenses: Longer license suspension, higher fines, and increased jail time.' },
+
+   { name_c:'fraud', name: 'Fraud', article: 'Credit Card Fraud (18 U.S.C. & 1029), Identity Theft (18 U.S.C. & 1028)', charge: 'Credit Card Fraud: Up to 10 years in prison and fines. Identity Theft: Up to 5 years in prison and fines.' },
+
+   { name_c:'robbery', name: 'Robbery', article: 'Article 160 or Article 161', charge: 'Misdemeanor: Up to 1 year in jail. Felony: 1 year or more in prison, often substantial fines as well.' },
+
+   { name_c:'burglary', name: 'Burglary', article: 'Federal law (21 U.S.C. & 922), State law (Article 125)', charge: 'Misdemeanor: Up to 1 year in jail. Felony: 1 year or more in prison, substantial fines.' },
+
+   { name_c:'homicide', name: 'Homicide', article: 'Murder (Article 125), Manslaughter (Article)', charge: 'Murder: Life imprisonment or death penalty in some jurisdictions. Manslaughter: Varies widely but can include several years in prison to life imprisonment.' },
+
+   { name_c:'demostic voilence', name: 'Domestic Violence', article: 'Federal law (18 U.S.C. & 922(g)), State law (Article 120 or Article 121)', charge: 'Misdemeanor: Up to 1 year in jail. Felony: 1 year or more in prison, substantial fines.' },
+
+   { name_c:'cybercrime', name: 'Cybercrime', article: 'Federal law (18 U.S.C. & 1030), State law (Article 156)', charge: 'Federal Law: Up to 10 years in prison for certain offenses, fines. State Law: Varies widely; can range from probation and fines to several years in prison.' }
+ ];
+    
+    for (let i = 0; i < list.length; i++) {
+        if (list[i].name_c === userInput) {
+            document.getElementById('result').innerHTML = `
+              <h1>The crime "${userInput}" </h1>
+              <h3>Assumption:</h3>
+              <table style="width:100%;">
+                <tr>
+                  <th>Court Hearing</th>
+                  <th>Crime Type</th>
+                  <th>Article</th>
+                  <th>Charges</th>
+                </tr>
+                <tr>
+                  <td>${userInputn}</td>
+                  <td>${list[i].name}</td>
+                  <td>${list[i].article}</td>
+                  <td>${list[i].charge}</td>
+                </tr>
+              </table>`;
+            return;
+        }
+    }
+    document.getElementById('result').innerHTML = `
+               <table style="width:100%;">
+                 <tr>
+                   <th>No Match Found.</th>
+                 </tr>
+               </table>`;
+   }
+</script>
+
+</html>

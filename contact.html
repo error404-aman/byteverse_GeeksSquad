@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="navbar" style="background-image: linear-gradient(to bottom, #0a0908, #22333b);">
+        <a href="home.html">Home</a>
+        <a href="contact.html" class="right">Contact</a>
+        <a href="work.html" class="right">Work</a>
+        <a href="team.html" class="right">Team</a>
+    </div>
+    
+<div class="row">
+    <div class="column1" style="background-color:#22333b; background-image: linear-gradient(to bottom, #0a0908, #22333b);">
+        <div class="bg-image"></div>
+    </div>
+      
+    <div class="column2" style="background-color:#bbb;">
+        <div class="container2">
+            <h1 style="color: #0a0908; font-weight:bolder;">Stay in Touch.</h1>
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text"  placeholder="Enter Name:" id="name" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="mail">Mail:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" placeholder="Enter Email:" id="mail" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="msg">Message:</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="msg" name="msg" rows="5" cols="25" required> 
+                    </textarea>
+                </div>
+            </div>
+            <button onclick="input" class="btn success2" type="button">Submit</button>
+        </div>
+    </div>
+</div>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray; margin-top:50px">
+
+<div class="footer">
+    <h5>@Copyright GeeksSquad 13, April 2024</h5>
+</div>
+
+</body>
+</html>
