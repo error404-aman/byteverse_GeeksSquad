@@ -3,7 +3,7 @@
 # Virtual Judge Readme
 
 Introduction
-Virtual Judge is a platform designed to streamline the process of analyzing legal cases and determining penalties associated with them. It allows users to submit their code solutions to programming problems, which are then tested against various test cases to determine the appropriate penalty in the culprit's case.
+Virtual Judge is a platform designed to streamline the process of analyzing legal cases and determining penalties associated with them. It allows users to submit their case type and the accurate charges and penalties are shown in tabular data for a better user experience. Also, this virtual judge website can guide law students and professionals in their projects as they don't need to study heavy books for an article that is applicable to a case.
 
 Problems Solved
 Virtual Judge addresses several critical issues in the legal system:
@@ -24,12 +24,12 @@ Virtual Judge is built using the following technologies:
 Usage
 To use Virtual Judge, users simply need to visit the website and provide their name along with details of the case they are interested in. The platform then processes this information and delivers the necessary analysis, including the type of article involved and the corresponding penalty.
 
-Contribution
-Contributions to Virtual Judge are welcome! Whether it's refining the existing codebase, adding new features, or improving the user interface, all forms of contributions are appreciated. Please follow the guidelines outlined in the contributing.md file to ensure a smooth collaboration process.
-
 ## License
 Virtual Judge is licensed under the copyright (GeeksSquad). Feel free to use, modify, and distribute the codebase according to the terms specified in the license.
 
 ---
 
 By contributing to Virtual Judge, you're not only improving the efficiency of legal processes but also enhancing access to legal knowledge and education worldwide. Together, let's make the legal system more accessible and transparent for everyone.
+
+Video Link (For better understanding)
+https://www.youtube.com/watch?v=i0Y1jEuCsZ0&feature=youtu.be
